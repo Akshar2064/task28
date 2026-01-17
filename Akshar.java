@@ -1,5 +1,42 @@
+import java.util.Scanner;
+
 public class Akshar{
 	public static void main(String[]args) {
-		System.out.println("Akshar is a good boy");
+	// Calculator methods
+    static int add(int a, int b) {
+        return a + b;
+    }
+
+    static int subtract(int a, int b) {
+        return a - b;
+    }
+
+    static int multiply(int a, int b) {
+        return a * b;
+    }
+
+    static int divide(int a, int b) {
+        return a / b;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Calculator Program");
+        System.out.print("Enter first number: ");
+        int a = sc.nextInt();
+
+        System.out.print("Enter second number: ");
+        int b = sc.nextInt();
+
+        System.out.println("Addition: " + add(a, b));
+        System.out.println("Subtraction: " + subtract(a, b));
+        System.out.println("Multiplication: " + multiply(a, b));
+        System.out.println("Division: " + divide(a, b));
+
+        sc.close();
+    
+	
+		
 	}
 }
